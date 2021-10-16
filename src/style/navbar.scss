@@ -1,0 +1,74 @@
+@import "index.scss";
+
+.nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background: #023047;
+  color: white;
+  z-index: 99;
+  .logo {
+    height: fit-content;
+    margin-top: 10px;
+    line-height: 12px;
+    small {
+      font-size: 11px;
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .daftar {
+      padding: 10px 13px;
+    }
+    .produk {
+      position: relative;
+    }
+  }
+  a {
+    font-size: 18px;
+    color: #adb5bd;
+    margin: 0 20px;
+    &.arrow-drop {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+    }
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 8px;
+  z-index: 1;
+  left: -50px;
+  border-radius: 10px;
+  a {
+    text-align: left;
+    color: #023047;
+    margin: 0;
+  }
+  &:hover {
+    background: #adb5bd;
+    color: #023047;
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

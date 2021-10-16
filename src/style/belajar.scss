@@ -1,0 +1,20 @@
+@import "index.scss";
+.belajar {
+  height: 100vh;
+  padding: 0 100px;
+  margin-top: 100px;
+  .text-belajar {
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      &::before {
+        bottom: 20%;
+        height: 25%;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
