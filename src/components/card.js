@@ -6,10 +6,8 @@ const Card = ({ Imgs, title, desc, moreText }) => {
   const handleClick = () => {
     if (textMore === "moreText") {
       setTextmore("moreTextActive");
-      console.log(textMore);
     } else {
       setTextmore("moreText");
-      console.log(textMore);
     }
   };
 
@@ -21,7 +19,7 @@ const Card = ({ Imgs, title, desc, moreText }) => {
       <div className="tmp-text">
         <h3>{title}</h3>
         <p>
-          {desc} <span className={"moreText" + " " + textMore}>{moreText}</span>
+          {desc} <span className={`"moreText"  ${textMore}`}>{moreText}</span>
         </p>
         <button onClick={handleClick}>{textMore === "moreText" ? "Read more" : "Read less"}</button>
       </div>
