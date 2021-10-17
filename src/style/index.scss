@@ -32,7 +32,12 @@ a {
 .col-2 {
   flex: 2;
 }
-
+.col-3 {
+  flex: 3;
+}
+.col-4 {
+  flex: 4;
+}
 .garis-bawah {
   position: relative;
   width: fit-content;
@@ -47,4 +52,10 @@ a {
     background: #ffc919;
     z-index: -1;
   }
+}
+button {
+  cursor: pointer;
+}
+.App {
+  width: 100%;
 }

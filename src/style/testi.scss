@@ -1,0 +1,67 @@
+@import "index.scss";
+.testi {
+  height: 100vh;
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  .img {
+    text-align: center;
+    img {
+      width: 700px;
+      height: 800px;
+      object-fit: contain;
+    }
+  }
+  .text {
+    h2 {
+      font-size: 40px;
+      color: #212f45;
+      span {
+        &::before {
+          bottom: 18%;
+          margin-left: 3px;
+        }
+      }
+    }
+    p {
+      line-height: 30px;
+      color: #6c757d;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 8px 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .testi {
+    padding: 0 20px;
+    height: fit-content;
+    flex-direction: column;
+    .img {
+      img {
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
+      }
+    }
+    .text {
+      text-align: center;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}

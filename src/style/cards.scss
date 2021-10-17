@@ -46,3 +46,37 @@
     }
   }
 }
+.moreText {
+  display: none;
+}
+.moreTextActive {
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    .tmp-img {
+      width: 100%;
+      height: 200px;
+      svg {
+        width: 100px;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .tmp-text {
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+  }
+}
